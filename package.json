@@ -1,0 +1,15 @@
+{
+  "name": "docz-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "docz dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "docz": "^1.0.3",
+    "docz-theme-default": "^1.0.3"
+  }
+}
