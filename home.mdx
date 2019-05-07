@@ -1,7 +1,43 @@
 ---
-name: Hello world
+name: Getting Started
+route: /
 ---
 
-# Hello world
+import { Playground, Props } from "docz";
+import RfReceiver from "./src/";
 
-Hello, I'm a mdx file!
+## Why rf-filereceiver
+
+You might have requirement to download something programmatically.
+
+[downloadjs](https://github.com/rndme/download) is a good library, but the imperative API seems not the best friend of `react.js`. That's why you are here.
+
+## Installation
+
+### yarn
+
+```bash
+yarn add rf-filereceiver
+```
+
+### npm
+
+```bash
+npm install rf-filereceiver
+```
+
+## Usage
+
+<Playground>
+  <RfReceiver
+    url="https://leftstick.github.io/rf-filereceiver/public/example.txt"
+    fileName="test.txt"
+    fileMIMEType="text/plain"
+  >
+    <button>Try here</button>
+  </RfReceiver>
+</Playground>
+
+## Props
+
+<Props of={RfReceiver} />
